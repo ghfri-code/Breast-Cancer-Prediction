@@ -14,25 +14,41 @@ This project will implement a machine learning-based breast cancer prediction sy
 
 ## Dataset
 In this project we use 2 different dataset but approximately the same techniques can be applied to different scenarios.                  
-### first dataset
-The dataset is the Breast Cancer [Wisconsin dataset](https://archive.ics.uci.edu/ml/machine-learning-databases/breast-cancer wisconsin/wdbc.data), publicly available and commonly used in machine learning for cancer diagnosis tasks. The data was provded by Dr. William H. Wolberg from the University of Wisconsin General Surgery Dept.                                                                              
+### First Dataset
+The dataset is the Breast Cancer [Wisconsin dataset](https://archive.ics.uci.edu/ml/machine-learning-databases/breast-cancer-wisconsin/wdbc.data), publicly available and commonly used in machine learning for cancer diagnosis tasks. The data was provded by Dr. William H. Wolberg from the University of Wisconsin General Surgery Dept.                                                                              
 The dataset comprises various numerical features that assist in the classification of breast masses as either benign or malignant.
 **Attribute Information**:
-a) radius (mean of distances from center to points on the perimeter)                                                   
-b) texture (standard deviation of gray-scale values)         
-c) perimeter                                                 
-d) area                                                      
-e) smoothness (local variation in radius lengths)            
-f) compactness (perimeter^2 / area - 1.0)                    
-g) concavity (severity of concave portions of the contour)   
-h) concave points (number of concave portions of the contour)
-i) symmetry                                                  
-j) fractal dimension ("coastline approximation" - 1)         
+- radius (mean of distances from center to points on the perimeter)                                                   
+- texture (standard deviation of gray-scale values)         
+- perimeter                                                 
+- area                                                      
+- smoothness (local variation in radius lengths)            
+- compactness (perimeter^2 / area - 1.0)                    
+- concavity (severity of concave portions of the contour)   
+- concave points (number of concave portions of the contour)
+- symmetry                                                  
+- fractal dimension ("coastline approximation" - 1)         
 This dataset was obtained by analyzing the cell nuclei characteristics of 569 images obtained by Fine Needle Aspiration of the breast mass. Each of the images is classified(diagnosed) as being “Benign” or “Malignant”. The mean, standard error, and "worst" or largest (mean of the three largest values) of these features were computed for each image, resulting in 30 features.
-### second dataset
-The dataset is the Breast Cancer [Wisconsin dataset](https://archive.ics.uci.edu/ml/machine-learning-databases/breast-cancer wisconsin/wdbc.data).
+### Second Dataset
+The dataset is also the Breast Cancer [Wisconsin dataset](https://archive.ics.uci.edu/ml/machine-learning-databases/breast-cancer-wisconsin/breast-cancer-wisconsin.data). It was obtained from the University of Wisconsin Hospitals, Madison from Dr. William H. Wolberg.
+It contains data from 699 patients’ breast biopsied tissue to identify cytological characteristics of being or malignant using the Fine-Needle Aspirates (FNAs) method. The biased 699 data rows were then reduced to 683 rows by removing 16 rows that contained missing information.
+It has following 10 features nine attributes as predictors that were scaled with an integer value in the range between 1 and 10 and class label with two values(2 and 4).
+| Predictors | Details |
+| ----------- | ----------- |
+|Clump Thickness| If the cell is grouped, forming monolayers, it is likely to be benign cells since cancerous cells tend to be grouped in multilayers. |
+|Uniformity of Cell Size| Cancer cells tend to vary in size, which is used to estimate the consistency in the cell size.|
+|Uniformity of Cell Shape| Cell uniformity is used to verify the shape of the types of cells (cancer and non- cancer) because cancer cells tend to vary in shape. |
+|Marginal Adhesion| Cancer cells tend to lose the ability of cells sticking together, so this method can be used to identify carcinogenic and non-carcinogenic cells.|
+|Single Epithelial Cell Size| Most cancer usually occurs inside epithelial tissues which is a tissue covering the internal and external surfaces of our body.|
+|Bare Nuclei| It is a term for the largest structure in thepreparation not in or surrounded by cytoplasm. |
+|Bland Chromatin| It describes a uniform texture of the nucleus.|
+|Normal Nucleoli| It is a term for the largest structure in the nucleus, where they synthesize and assemble the cell’s ribosomes.|
+|Mitoses| This type of cell division is where replicated or daughter cells have the same kind and number of chromosomes as their original or parent cells.|
 
 
+| Lable | Details | Values|
+| ----------- | ----------- |----------- |
+| Class | There are two class types: benign and malignant |2=benign, 4= malignant |
 
 ## Approach
-It involved exploring, preprocessing, visualization,modeling data and prediction analysis. Multiple algorithms were compared based on key metrics like accuracy, F1 score, recall, and precision. The aim was to identify the best performing model for accurate breast cancer prediction.
+It involved exploring, preprocessing, visualization,modeling data and prediction analysis. Multiple algorithms were compared based on key metrics like accuracy, F1 score, recall, and precision. The aim was to identify the best performing model for accurate breast cancer prediction. 
