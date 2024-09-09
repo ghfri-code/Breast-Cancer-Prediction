@@ -17,6 +17,7 @@ In this project we use 2 different dataset but approximately the same techniques
 ### First Dataset
 The dataset is the Breast Cancer [Wisconsin dataset](https://archive.ics.uci.edu/ml/machine-learning-databases/breast-cancer-wisconsin/wdbc.data), publicly available and commonly used in machine learning for cancer diagnosis tasks. The data was provded by Dr. William H. Wolberg from the University of Wisconsin General Surgery Dept.                                                                              
 The dataset comprises various numerical features that assist in the classification of breast masses as either benign or malignant.
+
 **Attribute Information**:
 - radius (mean of distances from center to points on the perimeter)                                                   
 - texture (standard deviation of gray-scale values)         
@@ -32,7 +33,8 @@ This dataset was obtained by analyzing the cell nuclei characteristics of 569 im
 ### Second Dataset
 The dataset is also the Breast Cancer [Wisconsin dataset](https://archive.ics.uci.edu/ml/machine-learning-databases/breast-cancer-wisconsin/breast-cancer-wisconsin.data). It was obtained from the University of Wisconsin Hospitals, Madison from Dr. William H. Wolberg.
 It contains data from 699 patients’ breast biopsied tissue to identify cytological characteristics of being or malignant using the Fine-Needle Aspirates (FNAs) method. The biased 699 data rows were then reduced to 683 rows by removing 16 rows that contained missing information.
-It has following 10 features nine attributes as predictors that were scaled with an integer value in the range between 1 and 10 and class label with two values(2 and 4).
+It has the following 10 attributes; nine of them as predictors that were scaled with an integer value in the range between 1 and 10 and a class label with two values(2 and 4).
+
 | Predictors | Details |
 | ----------- | ----------- |
 |Clump Thickness| If the cell is grouped, forming monolayers, it is likely to be benign cells since cancerous cells tend to be grouped in multilayers. |
@@ -44,7 +46,6 @@ It has following 10 features nine attributes as predictors that were scaled with
 |Bland Chromatin| It describes a uniform texture of the nucleus.|
 |Normal Nucleoli| It is a term for the largest structure in the nucleus, where they synthesize and assemble the cell’s ribosomes.|
 |Mitoses| This type of cell division is where replicated or daughter cells have the same kind and number of chromosomes as their original or parent cells.|
-
 
 | Lable | Details | Values|
 | ----------- | ----------- |----------- |
